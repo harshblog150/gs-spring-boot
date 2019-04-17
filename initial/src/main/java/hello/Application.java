@@ -11,10 +11,10 @@ public class Application {
     
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(Application.class, args);
-        //---
+        //-------
         //ctx.setDefaultProperties(Collections.singletonMap("server.port", "8081"));
         //ctx.run(args);
-        //---
+        //-------
         System.out.println("Let's inspect the beans provided by Spring Boot:");
         
         String[] beanNames = ctx.getBeanDefinitionNames();
